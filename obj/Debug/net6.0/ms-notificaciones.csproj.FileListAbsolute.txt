@@ -55,3 +55,8 @@ D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\refint\ms-notificaciones.dll
 D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.pdb
 D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.genruntimeconfig.cache
 D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ref\ms-notificaciones.dll
+D:\Universidad\2023-2\Programacion 3\urbanNav\ms-notificaciones\bin\Debug\net6.0\DotNetEnv.dll
+D:\Universidad\2023-2\Programacion 3\urbanNav\ms-notificaciones\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Universidad\2023-2\Programacion 3\urbanNav\ms-notificaciones\bin\Debug\net6.0\SendGrid.dll
+D:\Universidad\2023-2\Programacion 3\urbanNav\ms-notificaciones\bin\Debug\net6.0\Sprache.dll
+D:\Universidad\2023-2\Programacion 3\urbanNav\ms-notificaciones\bin\Debug\net6.0\StarkbankEcdsa.dll

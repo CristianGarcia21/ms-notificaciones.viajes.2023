@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj": {}
+    "D:\\Universidad\\2023-2\\Programacion 3\\urbanNav\\ms-notificaciones\\ms-notificaciones.csproj": {}
   },
   "projects": {
-    "D:\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj": {
+    "D:\\Universidad\\2023-2\\Programacion 3\\urbanNav\\ms-notificaciones\\ms-notificaciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj",
+        "projectUniqueName": "D:\\Universidad\\2023-2\\Programacion 3\\urbanNav\\ms-notificaciones\\ms-notificaciones.csproj",
         "projectName": "ms-notificaciones",
-        "projectPath": "D:\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj",
-        "packagesPath": "C:\\Users\\gsus\\.nuget\\packages\\",
-        "outputPath": "D:\\ms-notificaciones.viajes.2023\\obj\\",
+        "projectPath": "D:\\Universidad\\2023-2\\Programacion 3\\urbanNav\\ms-notificaciones\\ms-notificaciones.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "D:\\Universidad\\2023-2\\Programacion 3\\urbanNav\\ms-notificaciones\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gsus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
             "SendGrid": {
               "target": "Package",
               "version": "[9.28.1, )"
@@ -66,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.413\\RuntimeIdentifierGraph.json"
         }
       }
     }
