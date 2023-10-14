@@ -25,3 +25,33 @@ D:\Universidad\2023-2\Programacion 3\urbanNav\ms-notificaciones\obj\Debug\net6.0
 D:\Universidad\2023-2\Programacion 3\urbanNav\ms-notificaciones\obj\Debug\net6.0\ms-notificaciones.pdb
 D:\Universidad\2023-2\Programacion 3\urbanNav\ms-notificaciones\obj\Debug\net6.0\ms-notificaciones.genruntimeconfig.cache
 D:\Universidad\2023-2\Programacion 3\urbanNav\ms-notificaciones\obj\Debug\net6.0\ref\ms-notificaciones.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\appsettings.Development.json
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\appsettings.json
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\ms-notificaciones.exe
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\ms-notificaciones.deps.json
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\ms-notificaciones.runtimeconfig.json
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\ms-notificaciones.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\ms-notificaciones.pdb
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\SendGrid.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\StarkbankEcdsa.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.csproj.AssemblyReference.cache
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.GeneratedMSBuildEditorConfig.editorconfig
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.AssemblyInfoInputs.cache
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.AssemblyInfo.cs
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.csproj.CoreCompileInputs.cache
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.MvcApplicationPartsAssemblyInfo.cs
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.MvcApplicationPartsAssemblyInfo.cache
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\staticwebassets.build.json
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\staticwebassets.development.json
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\scopedcss\bundle\ms-notificaciones.styles.css
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.csproj.CopyComplete
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.dll
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\refint\ms-notificaciones.dll
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.pdb
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.genruntimeconfig.cache
+D:\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ref\ms-notificaciones.dll
