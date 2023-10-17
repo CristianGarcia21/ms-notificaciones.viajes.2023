@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usuario\\proyecto-viajes\\backend\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj": {}
+    "D:\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usuario\\proyecto-viajes\\backend\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj": {
+    "D:\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuario\\proyecto-viajes\\backend\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj",
+        "projectUniqueName": "D:\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj",
         "projectName": "ms-notificaciones",
-        "projectPath": "C:\\Users\\usuario\\proyecto-viajes\\backend\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj",
-        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuario\\proyecto-viajes\\backend\\ms-notificaciones.viajes.2023\\obj\\",
+        "projectPath": "D:\\ms-notificaciones.viajes.2023\\ms-notificaciones.csproj",
+        "packagesPath": "C:\\Users\\gsus\\.nuget\\packages\\",
+        "outputPath": "D:\\ms-notificaciones.viajes.2023\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gsus\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[3.7.101.34, )"
+            },
             "DotNetEnv": {
               "target": "Package",
               "version": "[2.5.0, )"
@@ -62,24 +66,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.15, 6.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.15, 6.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.15, 6.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.15, 6.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -88,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }

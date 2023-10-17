@@ -97,3 +97,7 @@ C:\Users\usuario\proyecto-viajes\backend\ms-notificaciones.viajes.2023\obj\Debug
 C:\Users\usuario\proyecto-viajes\backend\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.pdb
 C:\Users\usuario\proyecto-viajes\backend\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ms-notificaciones.genruntimeconfig.cache
 C:\Users\usuario\proyecto-viajes\backend\ms-notificaciones.viajes.2023\obj\Debug\net6.0\ref\ms-notificaciones.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\AWSSDK.Core.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\AWSSDK.SimpleNotificationService.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\DotNetEnv.dll
+D:\ms-notificaciones.viajes.2023\bin\Debug\net6.0\Sprache.dll

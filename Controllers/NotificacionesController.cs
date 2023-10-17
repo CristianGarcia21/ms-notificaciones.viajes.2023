@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using ms_notificaciones.Models;
 using EllipticCurve;
 namespace ms_notificaciones.Controllers;
+using Amazon;
+using Amazon.SimpleNotificationService;
+using Amazon.SimpleNotificationService.Model;
+
 
 
 [ApiController]
@@ -20,9 +24,10 @@ public class NotificacionesController : ControllerBase
         var client = new SendGridClient(apiKey);
         SendGridMessage msg = this.CrearMensajeBase(datos);
         msg.SetTemplateId(Environment.GetEnvironmentVariable("WELCOME_SENDGRID_TEMPLATE_ID"));
-        msg.SetTemplateData(new{
-            name=datos.nombreDestino,
-            message="Bienvenido a UrbanNav."
+        msg.SetTemplateData(new
+        {
+            name = datos.nombreDestino,
+            message = "Bienvenido a UrbanNav."
         });
         var response = await client.SendEmailAsync(msg);
         if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
@@ -43,7 +48,8 @@ public class NotificacionesController : ControllerBase
         var client = new SendGridClient(apiKey);
         SendGridMessage msg = this.CrearMensajeBase(datos);
         msg.SetTemplateId(Environment.GetEnvironmentVariable("WELCOME_SENDGRID_TEMPLATE_ID"));
-        msg.SetTemplateData(new{
+        msg.SetTemplateData(new
+        {
             name = datos.nombreDestino,
             message = "Esta es su nueva clave... por favor, no la comparta."
         });
@@ -66,7 +72,8 @@ public class NotificacionesController : ControllerBase
         var client = new SendGridClient(apiKey);
         SendGridMessage msg = this.CrearMensajeBase(datos);
         msg.SetTemplateId(Environment.GetEnvironmentVariable("TWOFA_SENDGRID_TEMPLATE_ID"));
-        msg.SetTemplateData(new{
+        msg.SetTemplateData(new
+        {
             nombre = datos.nombreDestino,
             mensaje = datos.contenidoCorreo,
             asunto = datos.asuntoCorreo
@@ -82,7 +89,8 @@ public class NotificacionesController : ControllerBase
         }
     }
 
-    private SendGridMessage CrearMensajeBase(ModeloCorreo datos) {
+    private SendGridMessage CrearMensajeBase(ModeloCorreo datos)
+    {
         var from = new EmailAddress(Environment.GetEnvironmentVariable("EMAIL_FROM"), Environment.GetEnvironmentVariable("NAME_FROM"));
         var subject = "Sending with SendGrid is Fun";
         var to = new EmailAddress(datos.correoDestino, datos.nombreDestino);
@@ -90,6 +98,40 @@ public class NotificacionesController : ControllerBase
         var htmlContent = datos.contenidoCorreo;
         var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
         return msg;
+    }
+
+
+    [Route("enviar-sms")]
+    [HttpPost]
+    public async Task<ActionResult> EnviarSMSNuevaClave(ModeloSms datos)
+    {
+        var accessKey = Environment.GetEnvironmentVariable("ACCESS_KEY_AWS");
+        var secretKey = Environment.GetEnvironmentVariable("SECRET_KEY_AWS");
+        var client = new AmazonSimpleNotificationServiceClient(accessKey, secretKey, RegionEndpoint.USEast1);
+        var messageAttributes = new Dictionary<string, MessageAttributeValue>();
+        var smsType = new MessageAttributeValue
+        {
+            DataType = "String",
+            StringValue = "Transactional"
+        };
+
+        messageAttributes.Add("AWS.SNS.SMS.SMSType", smsType);
+
+        PublishRequest request = new PublishRequest
+        {
+            Message = datos.contenidoMensaje,
+            PhoneNumber = datos.numeroDestino,
+            MessageAttributes = messageAttributes
+        };
+        try
+        {
+            await client.PublishAsync(request);
+            return Ok("Mensaje enviado");
+        }
+        catch
+        {
+            return BadRequest("Error enviando el sms");
+        }
     }
 
 }
