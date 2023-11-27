@@ -47,11 +47,11 @@ public class NotificacionesController : ControllerBase
         var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
         var client = new SendGridClient(apiKey);
         SendGridMessage msg = this.CrearMensajeBase(datos);
-        msg.SetTemplateId(Environment.GetEnvironmentVariable("WELCOME_SENDGRID_TEMPLATE_ID"));
+        msg.SetTemplateId(Environment.GetEnvironmentVariable("PASSWORD_SENDGRID_TEMPLATE_ID"));
         msg.SetTemplateData(new
         {
             name = datos.nombreDestino,
-            message = "Esta es su nueva clave... por favor, no la comparta."
+            message = datos.contenidoCorreo
         });
         var response = await client.SendEmailAsync(msg);
         if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
